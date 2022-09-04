@@ -29,17 +29,20 @@
                 <div class="table__header">VIDEO LINK</div>
             </div>
 
+            <div class="container-items">
             <?php $result = mysqli_query($conexion,$postsQuery);
             
             while($row=mysqli_fetch_assoc($result)) { ?>
 
             <div class="table__item"> <?php echo $row["id"] ?> </div>
+            <div class="table__item"> <?php echo $row["title"] ?> </div>
             <div class="table__item"> <?php echo $row["descriptionPost"] ?> </div>
             <div class="table__item"> <?php echo $row["imagenLink"] ?> </div>
             <div class="table__item"> <?php echo $row["content"] ?> </div>
             <div class="table__item"> <?php echo $row["videoLink"] ?> </div>
 
             <?php } ?>
+            </div>
 
         </div>
     </div>
