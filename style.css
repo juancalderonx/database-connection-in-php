@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-table {
+    width: 600px;
+    height: 400px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.container-headers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 2rem;
+}
+
+.title-table {
+    background-color: rgb(39, 87, 197);
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.table__header, .table__item {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+}
